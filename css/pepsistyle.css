@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Defining variables */
+:root{
+    --light-c: #ddd;
+    --dark-c: #111;
+    --text-shadow: 2px 2px 2px rgba(0,0,0,0.8);
+    --box-shadow: 0 0 10px 2px rgba(0,0,0,0.4);
+}
+
+body{
+    background-color: #004b93;
+}
+
+.container1{
+    display: flex;
+}
+
+/* Navbar */
+
+#logo{
+    max-height: 60px;
+    border-radius: 50px;
+    box-shadow: var(--box-shadow);
+    margin: 2em 5em;
+}
+
+#logo:hover{
+    border: 4px #000000cc;
+    border-style: solid;
+
+}
+
+.navListGrp{
+    position: relative;
+    max-width: 40em;
+    height: 0;
+    display: flex;
+    list-style: none;
+    margin: 2em 4em auto auto;
+    padding-top: 1em;
+}
+
+.navListGrp li .navlist{
+    text-decoration: none;
+    padding: 0 2em;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-wrap: nowrap;
+    color: #ffffff;
+    white-space: nowrap;
+    
+
+}
+
+.navListGrp li .navlist:hover{
+    transition: 0.3s;
+    color: red;
+    text-shadow: var(--text-shadow);
+}
+
+/* Content */
+
+.mainContent{
+    width: 100%;
+    display: flex;
+}
+
+/* Left Content */
+.container2{
+    margin-top: 8em;
+    padding-left: 5em;
+    width: 100%;
+    
+}
+
+
+.container2 #heading{
+    font-size: 60px;
+    color: rgb(239, 236, 236);
+    line-height: 1.5em;
+}
+
+#headingspan{
+    font-size: 100px;
+}
+
+#para{
+    color: rgb(239, 236, 236);
+    max-width: 27em;
+}
+
+.btn{
+    margin: 2em 0;
+    font-size: medium;
+    padding: 5px 10px;
+    border-radius: 20px;
+    letter-spacing: 1px;
+    background-color: rgb(255, 255, 255);
+    color: #004b93;
+    box-shadow: inset var(--box-shadow);
+    border: 2px rgb(187, 186, 186,0.9);
+    border-style: solid;
+}
+
+.btn:hover{
+    background-color: #111;
+    color: white;
+}
+
+/* Right Content */
+
+.container3{
+    display: flex;
+    width: 45%;
+    
+    justify-content: center;
+}
+
+
+.social_media{
+    margin: auto 0;
+}
+
+.thumb{
+    position: relative;
+    text-align: center;
+    list-style: none;
+    
+    
+}
+
+.thumb img{
+    padding: 10px 5px;
+    margin: 1px 5px;
+    filter: opacity(0.4) drop-shadow(0 0 0 #ff0000);
+}
+
+/* Bottom Small images */
+
+.bottomContent{
+    list-style: none;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.bottomContent img{
+    max-width: 50px;
+    margin: 0 30px;
+}
+
+.bottomContent img:hover{
+    transform: translateY(-15px);
+}
+
