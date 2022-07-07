@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pepsi Landing Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/pepsistyle.css">
+</head>
+<body>
+    
+    <section id="header">
+
+        <!-- Navigation bar -->
+        
+        <nav class="navbar">
+            <div class="container1">
+                <a href="#" class="navbar-brand">
+                    <img src="logo.png" alt="Pepsi logo" id="logo">
+                </a>
+
+                <ul class="navListGrp">
+                    <li> <a href="#" class="navlist" id="home">Home</a></li>
+                    <li> <a href="#" class="navlist">Products</a></li>
+                    <li> <a href="#" class="navlist">Whats New</a></li>
+                    <li> <a href="#" class="navlist">Newsletter</a></li>
+                    <li> <a href="#" class="navlist">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        
+        <!-- Left part of actual content -->
+
+        <div class="mainContent">
+            <div class="container2">
+                <h1 id="heading">THAT'S WHAT <br><span id="headingspan"> I LIKE</span></h1>
+                <p id="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo recusandae, 
+                    repellat mollitia vero dolorem eveniet at debitis in nam illo.
+                </p>
+                <button class="btn">View all products</button>
+            </div>
+
+            <!-- Right part of actual content -->
+
+            <div class="container3">
+                <img src="pepsi001.png" class="pepsiCan" alt="Pepsi can">
+            </div>
+
+            <div class="social_media">
+                <ul class="thumb">
+                    <li><img class="social" src="facebook.png" alt=""></li>
+                    <li><img class="social" src="instagram.png" alt=""></li>
+                    <li><img class="social" src="twitter.png" alt=""></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- Bottom Small images -->
+
+        <div class="bottomContent">
+            <li><img src="pepsi001.png" alt="" class="thumbcans" onclick="imgSlider('pepsi001.png'); changeColor('#0062be'); socialColor('#ffffff')"></li>
+            <li><img src="pepsi002.png" alt="" class="thumbcans" onclick="imgSlider('pepsi002.png');changeColor('#c0c0c0'); socialColor('#ff0000')"></li>
+            <li><img src="pepsi003.png" alt="" class="thumbcans" onclick="imgSlider('pepsi003.png'); changeColor('#1e1e1e'); socialColor('#ffffff')"></li>
+        </div>
+    </section>
+    
+    <!-- Inline javascript  -->
+
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector(".pepsiCan").src=anything;
+        }
+
+        function changeColor(color){
+            const bgColor=document.querySelector("#header");
+            bgColor.style.background=color;   
+        }
+
+        // function socialColor(scolor){
+        //     const anycolor=document.querySelector(".social");
+        //     anycolor.style.background=scolor;
+
+        //     console.log(anycolor);
+        // }
+    </script>
+</body>
+</html>
